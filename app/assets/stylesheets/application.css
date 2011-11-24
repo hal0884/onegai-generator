@@ -1,3 +1,45 @@
+#main{
+	
+/*	width : 700px;
+	height:170px;
+	border:solid 1px #afafaf;
+*/	
+	position: relative;
+	background-repeat: no-repeat;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-size: 138px 172px;
+	margin-bottom: 0.5em !important;
+	background-color: white;
+	border: solid 1px silver;
+	height: 172px;
+	overflow: hidden;
+	
+	
+}
+#photo{
+	
+	float:left;
+	
+}
+#negai{
+	/*float:left;
+	display: table-cell;
+	vertical-align: middle;*/
+	font-size: 2.25em;
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+	color: navy;
+	padding: 1.5em 90px 0.8em 150px;
+	line-height: 1em;
+	text-align: center;
+	
+}
+
+#recreate{
+	
+	
+}
 /*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
