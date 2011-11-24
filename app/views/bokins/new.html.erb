@@ -1,0 +1,32 @@
+<% if current_user %>
+	<%= form_for(@bokin) do |f| %>
+  		<% if @bokin.errors.any? %>
+    	<div id="error_explanation">
+      		<h2><%= pluralize(@bokin.errors.count, "error") %> prohibited this bokin from being saved:</h2>
+
+      		<ul>
+      			<% @bokin.errors.full_messages.each do |msg| %>
+        		<li><%= msg %></li>
+      			<% end %>
+      		</ul>
+    	</div>
+  		<% end %>
+
+  		<div class="field">
+    		あなたの肩書きや異名を入れて下さい。<br />
+			(例:wikipedia創設者)<br />
+    		<%= f.text_field :secname %>
+  		</div>
+  		<div class="field">
+    		お願いのリンク先を記入して下さい。<br />
+    		<%= f.text_field :linkurl %>
+  		</div>
+
+  		<div class="actions">
+    		<%= f.submit %>
+  		</div>
+	<% end %>
+
+<% else %>
+
+<% end %>

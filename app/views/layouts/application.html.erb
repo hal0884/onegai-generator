@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jimmy</title>
+  <%= stylesheet_link_tag 'show_scc' %>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+<% if current_user %>
+	<%= current_user.name %>さん
+	<%= link_to "logout", logout_path %>
+	<br />
+	<br />
+	<br />
+<% else %>
+	<%= link_to "Facebok でログインしてお願いページを作ろう！","/auth/facebook "%><br/><br/>
+	
+<% end %>
+<%= yield %>
+
+</body>
+</html>

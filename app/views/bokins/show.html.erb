@@ -1,0 +1,11 @@
+<div id="main">
+  <div id="photo"><%=h image_tag("#{@bokin.photourl}",{:size => '135x170', :border => '0'})%></div>
+  <div id="negai"><%= link_to "#{@bokin.secname}", "#{@bokin.linkurl}" %><br/>
+  <%= link_to "#{@bokin.name}からの", "#{@bokin.linkurl}" %><br/>
+  <%= link_to "お願いをお読み下さい。", "#{@bokin.linkurl}" %></div>
+</div>
+
+
+<% if current_user %>
+<div id="recreate"><%= link_to 'もう一回作る', new_bokin_path %></div>
+<% end %>

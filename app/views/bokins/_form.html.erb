@@ -1,0 +1,29 @@
+<%= form_for(@bokin) do |f| %>
+  <% if @bokin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bokin.errors.count, "error") %> prohibited this bokin from being saved:</h2>
+
+      <ul>
+      <% @bokin.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :photourl %><br />
+    <%= f.text_field :photourl %>
+  </div>
+  <div class="field">
+    <%= f.label :secname %><br />
+    <%= f.text_field :secname %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
