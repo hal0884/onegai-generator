@@ -7,6 +7,8 @@ class SessionController < ApplicationController
   end
 
   def destroy
+    #@gig = User.find(current_user.id)
+    #@gig.destroy
     session[:user_id] = nil
     redirect_to root_url, :notice => "LOGOUT"
   end
