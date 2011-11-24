@@ -1,3 +1,45 @@
 // Place all the styles related to the bokins controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#main{
+	
+/*	width : 700px;
+	height:170px;
+	border:solid 1px #afafaf;
+*/	
+	position: relative;
+	background-repeat: no-repeat;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-size: 138px 172px;
+	margin-bottom: 0.5em !important;
+	background-color: white;
+	border: solid 1px silver;
+	height: 172px;
+	overflow: hidden;
+	
+	
+}
+#photo{
+	
+	float:left;
+	
+}
+#negai{
+	/*float:left;
+	display: table-cell;
+	vertical-align: middle;*/
+	font-size: 2.25em;
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+	color: navy;
+	padding: 1.5em 90px 0.8em 150px;
+	line-height: 1em;
+	text-align: center;
+	
+}
+
+#recreate{
+	
+	
+}
