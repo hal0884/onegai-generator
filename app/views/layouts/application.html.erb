@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div id="fukuyama"><%= link_to image_tag("onegai_title.png",{:size => '500x109',:border => '0'}), root_path %></div>
 <% if current_user %>
 	<%= current_user.name %>さん
 	<%= link_to "logout", logout_path %>
@@ -19,6 +20,8 @@
 	
 <% end %>
 <%= yield %>
-
+<br/>
+<br/>
+<div id="fukuyama"><%= link_to image_tag("onegai.png",{:size => '500x109',:border => '0'}), root_path %></div>
 </body>
 </html>

@@ -13,5 +13,14 @@ class User < ActiveRecord::Base
     end
   end
   
+  def post_feed(options = {})
+    logger.debug "[POST/feed] #{options.inspect}"
+    self.client.post("me/feed", options) unless mock?
+  end
+
+  def client
+    @client ||= RestGraph.new(:access_token => self.oauth_token)
+  end
+  
   
 end
